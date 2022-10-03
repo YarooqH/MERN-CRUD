@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(require('cors')());
-app.use(require('helmet')());
+// app.use(require('helmet')());
 app.use('/api/users', require('./routes/users'));
 
 // Production

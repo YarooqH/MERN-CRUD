@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 // Allow Promises
 mongoose.Promise = global.Promise;
 // Connection
-mongoose.connect('mongodb://germancutraro:germancutraro33@ds131551.mlab.com:31551/crud-mern', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://admin:1234@cluster0.dxxb5fz.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true });
 // Validation
 mongoose.connection
   .once('open', () => console.log('Connected to the database!'))
